@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Document</title>
     <style>
         body {
@@ -11,14 +12,20 @@
             font-family: Arial, sans-serif;
         }
         
-        .footer {
+        .footer { color: white;
+            padding: 15px 30px;
+        }
+
+    
+        .navbar {
+
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: #333;
-            color: white;
-            padding: 15px 30px;
-        }
+
+      }
+           
         
         .footer .social-icons a {
             color: white;
@@ -29,11 +36,35 @@
         
         .footer .social-icons a:hover {
             color: #ddd;
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 10px;
         }
     </style>
 </head>
 <body>
-    <footer class="footer">
+    
+=======
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+<footer class="footer">
         <div>© 2025 Your Company. All rights reserved.</div>
         <div class="social-icons">
             <a href="#" target="_blank">Facebook<i class="fab fa-facebook"></i></a>
